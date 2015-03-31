@@ -355,7 +355,7 @@ extern void proc_clear_tty(struct task_struct *p);
 extern struct tty_struct *get_current_tty(void);
 /* tty_io.c */
 extern int __init tty_init(void);
-extern char *tty_name(struct tty_struct *tty, char *buf);
+extern const char *tty_name(const struct tty_struct *tty, char *buf);
 #else
 static inline void console_init(void)
 { }
